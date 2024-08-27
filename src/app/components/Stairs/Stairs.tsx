@@ -1,21 +1,21 @@
-"use client";
-import { motion } from "framer-motion";
+'use client'
+import { motion } from 'framer-motion'
 
 const stairAnimation = {
     initial: {
-        top: "0%"
+        top: '0%',
     },
     animate: {
-        top: "100%",
+        top: '100%',
     },
     exit: {
-        top: ["100%", "0%"]
-    }
+        top: ['100%', '0%'],
+    },
 }
 
 const reverseIndex = (index: number) => {
-    const totalSteps: number = 6;
-    return (totalSteps - index - 1);
+    const totalSteps: number = 6
+    return totalSteps - index - 1
 }
 
 const Stairs = () => {
@@ -40,7 +40,8 @@ const Stairs = () => {
                             ease: 'easeInOut',
                             delay: reverseIndex(index) * 0.1,
                         }}
-                        className="h-full w-full bg-white relative" />
+                        className="h-full w-full bg-white relative"
+                    />
                 )
             })}
         </>
