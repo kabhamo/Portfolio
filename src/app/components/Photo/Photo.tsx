@@ -6,7 +6,6 @@ import Image from 'next/image'
 const Photo = () => {
     return (
         <div className="w-full h-full relative">
-
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{
@@ -52,15 +51,19 @@ const Photo = () => {
                         strokeWidth="4"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        initial={{ strokeDasharray: "24 10 0 0" }}
+                        initial={{ strokeDasharray: '24 10 0 0' }}
                         animate={{
-                            strokeDasharray: ["15 120 25 2", "16 25 92 72", "4 250 22 22"],
-                            rotate: [120, 360]
+                            strokeDasharray: [
+                                '15 120 25 2',
+                                '16 25 92 72',
+                                '4 250 22 22',
+                            ],
+                            rotate: [120, 360],
                         }}
                         transition={{
                             duration: 20,
                             repeat: Infinity,
-                            repeatType: "reverse"
+                            repeatType: 'reverse',
                         }}
                     />
                 </motion.svg>
