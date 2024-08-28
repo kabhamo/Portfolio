@@ -39,3 +39,30 @@ export const stats = [
         text: 'code commits',
     },
 ]
+
+export const services = [
+    {
+        num: '01',
+        title: 'Web & Mobile Development',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        href: ""
+    },
+    {
+        num: '02',
+        title: 'UI/UX Design',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        href: ""
+    },
+    {
+        num: '03',
+        title: 'Backend Development',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        href: ""
+    },
+    {
+        num: '04',
+        title: 'AWS Experience',
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.',
+        href: ""
+    },
+]
