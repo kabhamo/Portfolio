@@ -1,6 +1,5 @@
 'use client'
 
-
 import ExperienceCard from '../components/Card/ExperienceCard'
 import {
     Tabs,
@@ -19,7 +18,7 @@ const Resume = () => {
             initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
-                transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+                transition: { delay: 2, duration: 0.4, ease: 'easeIn' },
             }}
             className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
         >
@@ -53,7 +52,10 @@ const Resume = () => {
                         </TabsContent>
 
                         {/* aboutme */}
-                        <TabsContent value="aboutme" className="w-full text-cetnter xl:text-left">
+                        <TabsContent
+                            value="aboutme"
+                            className="w-full text-cetnter xl:text-left"
+                        >
                             <AboutCard />
                         </TabsContent>
                     </div>
