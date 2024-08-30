@@ -11,7 +11,6 @@ import { motion } from 'framer-motion'
 import EducationCard from '@/app/components/ResumeCards/EducationCard'
 import SkillsCard from '@/app/components/ResumeCards/SkillsCard'
 import AboutCard from '@/app/components/ResumeCards/AboutCard'
-import Image from 'next/image'
 
 const Resume = () => {
     return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import { skills } from '@/app/utils/constants'
 import {
     Tooltip,

@@ -1,4 +1,3 @@
-import React from 'react'
 import { about } from '@/app/utils/constants'
 const AboutCard = () => {
     return (
