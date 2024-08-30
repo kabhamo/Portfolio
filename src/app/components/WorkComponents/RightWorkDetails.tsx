@@ -9,7 +9,7 @@ type Props = {
 
 const RightWorkDetails = ({ project }: Props) => {
     return (
-        <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+        <div className="w-full xl:w-[80%] xl:h-[500px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
                 {/* outline num */}
                 <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
@@ -17,13 +17,13 @@ const RightWorkDetails = ({ project }: Props) => {
                 </div>
                 {/* project category */}
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                    {project.category} project
+                    {project.category}
                 </h2>
                 {/* project description */}
                 <p className="text-white/60">{project.description}</p>
 
                 {/* stack */}
-                <ul className="flex gap-4">
+                <ul className="flex flex-wrap gap-3">
                     {project.stack.map((item, index) => {
                         return (
                             <li key={index} className="text-xl text-accent">
@@ -38,7 +38,7 @@ const RightWorkDetails = ({ project }: Props) => {
                 {/* buttons */}
                 <div className="flex items-center gap-4">
                     {/* Live project button */}
-                    <LiveLink type={EnumLinkType.Live} link={project.live} />
+                    {project.live && <LiveLink type={EnumLinkType.Live} link={project.live} />}
                     {/* github project button */}
                     <LiveLink
                         type={EnumLinkType.Github}

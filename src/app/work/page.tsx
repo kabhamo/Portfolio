@@ -1,15 +1,12 @@
 'use client'
 import { motion } from 'framer-motion'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Swiper as SwiperCore } from 'swiper'
 import 'swiper/css'
 
 import { projects } from '../utils/constants'
-import Link from 'next/link'
-import LiveLink from '../components/WorkComponents/LiveLink'
-import { EnumLinkType } from '../utils/enums'
 import Image from 'next/image'
 import WorkSliderBtns from '@/app/components/WorkComponents/WorkSliderBtns'
 import RightWorkDetails from '@/app/components/WorkComponents/RightWorkDetails'
@@ -47,19 +44,30 @@ const Work = () => {
                             {projects.map((project, index) => {
                                 return (
                                     <SwiperSlide key={index} className="w-full">
-                                        <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                                        <div className={`h-[460px] relative group flex justify-center items-center ${project.num !== '02' && "bg-pink-50/20"}`}>
                                             {/* overlay */}
-                                            <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                                            <div className={`absolute top-0 bottom-0 w-full h-full ${project.num !== '02' && "bg-black/10"} z-10`}></div>
                                             {/* iamge */}
-                                            <div className="relative w-full h-full">
-                                                <Image
-                                                    src={project.image}
-                                                    fill
-                                                    className="object-cover"
-                                                    alt="thumb"
-                                                    quality={100}
-                                                />
-                                            </div>
+                                            {project.num !== '02' ? (
+                                                <div className="w-full h-full">
+                                                    <Image
+                                                        src={project.image}
+                                                        className="object-cover"
+                                                        alt="thumb"
+                                                        quality={100}
+                                                        fill
+                                                    /></div>) :
+                                                (<div className='w-[375px] h-[55vh]'>
+                                                    <Image
+                                                        src={project.image}
+                                                        alt="phone screen shot"
+                                                        quality={100}
+                                                        layout="fill"
+                                                        objectFit="contain"
+                                                    />
+                                                </div>)
+                                            }
+
                                         </div>
                                     </SwiperSlide>
                                 )

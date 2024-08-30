@@ -1,6 +1,6 @@
 'use client'
 
-import ExperienceCard from '../components/Card/ExperienceCard'
+import ExperienceCard from '../components/ResumeCards/ExperienceCard'
 import {
     Tabs,
     TabsContent,
@@ -8,9 +8,10 @@ import {
     TabsTrigger,
 } from '@/app/components/ui/tabs'
 import { motion } from 'framer-motion'
-import EducationCard from '@/app/components/Card/EducationCard'
-import SkillsCard from '@/app/components/Card/SkillsCard'
-import AboutCard from '@/app/components/Card/AboutCard'
+import EducationCard from '@/app/components/ResumeCards/EducationCard'
+import SkillsCard from '@/app/components/ResumeCards/SkillsCard'
+import AboutCard from '@/app/components/ResumeCards/AboutCard'
+import Image from 'next/image'
 
 const Resume = () => {
     return (
@@ -29,7 +30,7 @@ const Resume = () => {
                 >
                     <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
-                        <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="education">Education </TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
                         <TabsTrigger value="aboutme">About me</TabsTrigger>
                     </TabsList>

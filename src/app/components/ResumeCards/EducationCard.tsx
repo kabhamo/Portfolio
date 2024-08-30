@@ -1,5 +1,6 @@
 import { education } from '@/app/utils/constants'
 import { ScrollArea } from '@/app/components/ui/scroll-area'
+import Image from 'next/image'
 
 const EducationCard = () => {
     return (

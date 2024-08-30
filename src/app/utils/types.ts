@@ -4,7 +4,6 @@ interface StackType {
 export interface ProjectType {
     num: string
     category: string
-    title: string
     description: string
     stack: StackType[]
     image: string

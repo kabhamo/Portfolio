@@ -1,12 +1,5 @@
 import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa'
-
-const socials = [
-    { icon: <FaGithub />, path: '' },
-    { icon: <FaLinkedin />, path: '' },
-    { icon: <FaYoutube />, path: '' },
-    { icon: <FaTwitter />, path: '' },
-]
+import { socials } from '@/app/utils/constants'
 
 type Props = {
     containerStyles: string
@@ -17,8 +10,13 @@ const Socials = ({ containerStyles, iconStyles }: Props) => {
         <div className={containerStyles}>
             {socials.map((item, index) => {
                 return (
-                    <Link key={index} href={item.path} className={iconStyles}>
-                        {item.icon}
+                    <Link
+                        key={index}
+                        href={item.path}
+                        target="_blank"
+                        className={iconStyles}
+                    >
+                        {<item.icon size={24} />}
                     </Link>
                 )
             })}

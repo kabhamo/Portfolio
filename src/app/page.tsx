@@ -3,7 +3,7 @@ import { FiDownload } from 'react-icons/fi'
 import Socials from '@/app/components/Socials/Socials'
 import Photo from '@/app/components/Photo/Photo'
 import Stats from '@/app/components/Stats/Stats'
-
+import { homePageData } from './utils/constants'
 const Home = () => {
     return (
         <section className="h-full">
@@ -11,15 +11,15 @@ const Home = () => {
                 <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
                     {/* text */}
                     <div className="text-center xl:text-left order-2 xl:order-none">
-                        <span className="text-xl">Full Stack Engineer</span>
+                        <span className="text-xl">{homePageData.title}</span>
                         <h1 className="h1 mb-6">
-                            Hello I'm <br />{' '}
-                            <span className="text-accent">Mohamed Kabha</span>
+                            {homePageData.hello} <br />{' '}
+                            <span className="text-accent">
+                                {homePageData.name}
+                            </span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            I excel at crefting elegant digital experiences and
-                            I am proficient in various programming languages and
-                            technologies.
+                            {homePageData.introduction}
                         </p>
                         {/* btn and socials */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -34,7 +34,7 @@ const Home = () => {
                             <div className="mb-8 xl:mb-0">
                                 <Socials
                                     containerStyles="flex gap-6"
-                                    iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                                    iconStyles="w-12 h-12 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
                                 />
                             </div>
                         </div>
