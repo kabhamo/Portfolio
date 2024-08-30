@@ -203,7 +203,7 @@ export const projects = [
         title: 'project 1',
         description:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
+        stack: [{ name: 'Html' }, { name: 'Css' }, { name: 'Javascript' }],
         image: '/assets/work/thumb1.png',
         live: '',
         github: '',

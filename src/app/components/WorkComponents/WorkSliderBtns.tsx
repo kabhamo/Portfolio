@@ -1,7 +1,7 @@
-"use client";
+'use client'
 
-import { useSwiper } from "swiper/react";
-import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi"
+import { useSwiper } from 'swiper/react'
+import { PiCaretLeftBold, PiCaretRightBold } from 'react-icons/pi'
 
 type Props = {
     containerStyles: string
