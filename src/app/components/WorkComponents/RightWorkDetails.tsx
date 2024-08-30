@@ -38,7 +38,12 @@ const RightWorkDetails = ({ project }: Props) => {
                 {/* buttons */}
                 <div className="flex items-center gap-4">
                     {/* Live project button */}
-                    {project.live && <LiveLink type={EnumLinkType.Live} link={project.live} />}
+                    {project.live && (
+                        <LiveLink
+                            type={EnumLinkType.Live}
+                            link={project.live}
+                        />
+                    )}
                     {/* github project button */}
                     <LiveLink
                         type={EnumLinkType.Github}

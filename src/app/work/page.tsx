@@ -44,9 +44,13 @@ const Work = () => {
                             {projects.map((project, index) => {
                                 return (
                                     <SwiperSlide key={index} className="w-full">
-                                        <div className={`h-[460px] relative group flex justify-center items-center ${project.num !== '02' && "bg-pink-50/20"}`}>
+                                        <div
+                                            className={`h-[460px] relative group flex justify-center items-center ${project.num !== '02' && 'bg-pink-50/20'}`}
+                                        >
                                             {/* overlay */}
-                                            <div className={`absolute top-0 bottom-0 w-full h-full ${project.num !== '02' && "bg-black/10"} z-10`}></div>
+                                            <div
+                                                className={`absolute top-0 bottom-0 w-full h-full ${project.num !== '02' && 'bg-black/10'} z-10`}
+                                            ></div>
                                             {/* iamge */}
                                             {project.num !== '02' ? (
                                                 <div className="w-full h-full">
@@ -56,8 +60,10 @@ const Work = () => {
                                                         alt="thumb"
                                                         quality={100}
                                                         fill
-                                                    /></div>) :
-                                                (<div className='w-[375px] h-[55vh]'>
+                                                    />
+                                                </div>
+                                            ) : (
+                                                <div className="w-[375px] h-[55vh]">
                                                     <Image
                                                         src={project.image}
                                                         alt="phone screen shot"
@@ -65,9 +71,8 @@ const Work = () => {
                                                         layout="fill"
                                                         objectFit="contain"
                                                     />
-                                                </div>)
-                                            }
-
+                                                </div>
+                                            )}
                                         </div>
                                     </SwiperSlide>
                                 )
