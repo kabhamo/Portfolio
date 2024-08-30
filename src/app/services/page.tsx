@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import { BsArrowDownRight } from "react-icons/bs"
-import Link from "next/link";
-import { services } from "../utils/constants";
-import { motion } from "framer-motion";
+import { BsArrowDownRight } from 'react-icons/bs'
+import Link from 'next/link'
+import { services } from '../utils/constants'
+import { motion } from 'framer-motion'
 
 const Services = () => {
     return (
@@ -13,7 +13,11 @@ const Services = () => {
                     initial={{ opacity: 0 }}
                     animate={{
                         opacity: 1,
-                        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+                        transition: {
+                            delay: 2.4,
+                            duration: 0.4,
+                            ease: 'easeIn',
+                        },
                     }}
                     className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
                 >
@@ -44,13 +48,14 @@ const Services = () => {
                                     {service.description}
                                 </p>
                                 {/* border */}
-                                <div className="border-b border-white/20 w-full"> </div>
+                                <div className="border-b border-white/20 w-full">
+                                    {' '}
+                                </div>
                             </div>
                         )
                     })}
                 </motion.div>
             </div>
-
         </section>
     )
 }
