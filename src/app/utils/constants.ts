@@ -6,6 +6,9 @@ import {
     FaFigma,
     FaNodeJs,
 } from 'react-icons/fa'
+
+import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa"
+
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si'
 export const links = [
     {
@@ -233,5 +236,23 @@ export const projects = [
         image: '/assets/work/thumb3.png',
         live: '',
         github: '',
+    },
+]
+
+export const info = [
+    {
+        icon: FaPhoneAlt,
+        title: 'phone',
+        describtion: '(+972) 0556612423'
+    },
+    {
+        icon: FaEnvelope,
+        title: 'Email',
+        describtion: 'mkabha54@gmail.com'
+    },
+    {
+        icon: FaMapMarkedAlt,
+        title: 'Address',
+        describtion: 'Tel Aviv, Israel'
     },
 ]
