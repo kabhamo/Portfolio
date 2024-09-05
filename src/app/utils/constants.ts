@@ -280,7 +280,7 @@ export const projects = [
             { name: 'S3' },
         ],
         image: '/assets/work/thumb1.png',
-        live: 'https://main.drxahz1hwhdsc.amplifyapp.com/',
+        live: 'https://main.dedg1mqcj1stq.amplifyapp.com/',
         github: 'https://github.com/kabhamo/inverntory-management-project/tree/main',
     },
     {
